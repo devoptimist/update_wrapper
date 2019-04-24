@@ -1,20 +1,16 @@
 name 'update_wrapper'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
-license 'All Rights Reserved'
+maintainer 'Steve Brown'
+maintainer_email 'sbrown@chef.io'
+license 'Apache-2.0'
 description 'Installs/Configures update_wrapper'
 long_description 'Installs/Configures update_wrapper'
 version '0.1.0'
 chef_version '>= 13.0'
-
-# The `issues_url` points to the location where issues for this cookbook are
-# tracked.  A `View Issues` link will be displayed on this cookbook's page when
-# uploaded to a Supermarket.
-#
-# issues_url 'https://github.com/<insert_org_here>/update_wrapper/issues'
-
-# The `source_url` points to the development repository for this cookbook.  A
-# `View Source` link will be displayed on this cookbook's page when uploaded to
-# a Supermarket.
-#
-# source_url 'https://github.com/<insert_org_here>/update_wrapper'
+depends 'chef_client_updater'
+depends 'chef-client'
+# aix amazon centos fedora freebsd debian oracle mac_os_x redhat suse opensuse opensuseleap ubuntu windows zlinux
+%w( centos windows ).each do |os|
+  supports os
+end
+issues_url 'https://github.com/devoptimist/update_wrapper/issues'
+source_url 'https://github.com/devoptimist/update_wrapper'
