@@ -23,9 +23,9 @@ client_secret = "<client-secret>"
 tenant_id = "<tenant-id>"
 ```
 
+
 Running the upgrade
 ######
-
 First run kitchen converge to create a centos and windows image in Azure
 `kitchen converge`
 Once the system is converged you will have two servers running chef 13.0.118
