@@ -30,7 +30,14 @@ First run kitchen converge to create a centos and windows image in Azure.
 
 ```kitchen converge```
 
-Once the system is converged you will have two servers running chef 13.0.118
+Once the system is converged you will have two servers running chef 13.0.118.
+```
+$ kitchen  list
+Instance                Driver   Provisioner  Verifier  Transport  Last Action  Last Error
+default-centos-76       Azurerm  ChefZero     Inspec    Ssh        Converged    <None>
+default-windows-server  Azurerm  ChefZero     Inspec    Winrm      Converged    <None>
+```
+
 Now edit the policyfile.rb and chenge the runlist from:
 
 ```
