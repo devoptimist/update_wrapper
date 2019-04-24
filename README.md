@@ -27,7 +27,7 @@ tenant_id = "<tenant-id>"
 ### Running the upgrade
 
 First run kitchen converge to create a centos and windows image in Azure
-`kitchen converge`
+```kitchen converge```
 Once the system is converged you will have two servers running chef 13.0.118
 Now edit the policyfile.rb and chenge the runlist from:
 ```
@@ -40,14 +40,14 @@ to
 # run_list: chef-client will run these recipes in the order specified.
 run_list 'update_wrapper::update'
 ```
-`vim Policyfile.rb`
+```vim Policyfile.rb```
 
 then remove the Policyfile.lock.json to enable a new one to be generated
 
-`rm -rf Policyfile.lock.json`
+```rm -rf Policyfile.lock.json```
 Now we can converge again to see the updater cookbook run and update chef client 13.0.118 to chef client 14.11.21
 
-`kitchen converge`
+```kitchen converge```
 
 example log output
 ```
