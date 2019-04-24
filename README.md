@@ -96,5 +96,5 @@ $$$$$$ chef-client.bat : The batch file cannot be found.
 >>>>>> Please see .kitchen/logs/kitchen.log for more details
 >>>>>> Also try running `kitchen diagnose --all` for configuration
 ```
-The Test-Kitchen run will end with an error like the one above, but this is expect, due to the upgrade process needing to kill the existing chef client run to be able to remove it from the system fully.
+The Test-Kitchen run will end with an error like the one above, but this is expected. The error is due to the upgrade process needing to kill the existing chef client run to be able to remove it from the system fully.
 
