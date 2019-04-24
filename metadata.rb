@@ -8,7 +8,6 @@ version '0.1.0'
 chef_version '>= 13.0'
 depends 'chef_client_updater'
 depends 'chef-client'
-# aix amazon centos fedora freebsd debian oracle mac_os_x redhat suse opensuse opensuseleap ubuntu windows zlinux
 %w( centos windows ).each do |os|
   supports os
 end
