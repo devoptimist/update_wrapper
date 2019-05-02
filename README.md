@@ -13,7 +13,7 @@ driver:
 ```
 
 then create an azure credentials file in your home directory:
-`.~/azure/credentials`
+`~/.azure/credentials`
 
 ```
 [your subscription id]
